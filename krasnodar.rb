@@ -1,7 +1,7 @@
 class Krasnodar < Formula
   include Language::Python::Virtualenv
 
-  desc "Putting your mac to sleep when you say Krasnodar out loud"
+  desc "Putting your mac to sleep when you say Krasnodar"
   homepage "https://github.com/alagunto/homebrew-krasnodar/"
   url "https://github.com/alagunto/homebrew-krasnodar/archive/master.tar.gz"
   version "1.0.0"
