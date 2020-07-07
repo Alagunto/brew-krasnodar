@@ -41,8 +41,6 @@ class Krasnodar < Formula
        <string>#{libexec}/bin/python</string>
        <string>#{prefix}/</string>
      </array>
-     <key>RunAtLoad</key>
-     <true />
      <key>KeepAlive</key>
      <true />
      <key>StandardErrorPath</key>
