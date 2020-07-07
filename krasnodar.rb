@@ -8,7 +8,6 @@ class Krasnodar < Formula
   sha256 ""
   license "MIT"
 
-  depends_on "make"
   depends_on "python"
   depends_on "portaudio"
   depends_on "sox"
@@ -19,8 +18,8 @@ class Krasnodar < Formula
   end
 
   def install
-    virtualenv_create(libexec, "python3")
-    virtualenv_install_with_resources
+    venv = virtualenv_create(libexec, "python3")
+    venv.pip_install resource("PyAudio")
   end
 
   def plist_name
