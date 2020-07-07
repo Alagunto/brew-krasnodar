@@ -4,13 +4,14 @@ class Krasnodar < Formula
   desc "Putting your mac to sleep when you say Krasnodar"
   homepage "https://github.com/alagunto/homebrew-krasnodar/"
   url "https://github.com/alagunto/homebrew-krasnodar/archive/krasnodar.tar.gz"
-  version "1.0.3"
+  version "1.1.0"
   sha256 ""
   license "MIT"
 
   depends_on "python"
   depends_on "portaudio"
   depends_on "sox"
+  depends_on "swig"
 
   resource "PyAudio" do
     url "https://files.pythonhosted.org/packages/ab/42/b4f04721c5c5bfc196ce156b3c768998ef8c0ae3654ed29ea5020c749a6b/PyAudio-0.2.11.tar.gz"
