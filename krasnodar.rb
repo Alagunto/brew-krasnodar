@@ -18,10 +18,10 @@ class Krasnodar < Formula
   end
 
   def install
+    system "make", "install", "PREFIX=#{prefix}"
     prefix.install Dir["./*"]
     venv = virtualenv_create(libexec, "python3")
     venv.pip_install resource("PyAudio")
-    system "make", "install", "PREFIX=#{prefix}"
   end
 
   test do
