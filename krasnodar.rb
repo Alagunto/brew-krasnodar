@@ -46,11 +46,11 @@ class Krasnodar < Formula
      <key>KeepAlive</key>
      <true />
      <key>StandardErrorPath</key>
-     <string>/dev/null</string>
+     <string>/tmp/krasnodar.error.txt</string>
      <key>StandardOutPath</key>
-     <string>/dev/null</string>
+     <string>/tmp/krasnodar.out.txt</string>
      <key>WorkingDirectory</key>
-     <string>#{prefix}</string>
+     <string>#{prefix}/</string>
    </dict>
    </plist>
    EOS
