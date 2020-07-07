@@ -1,7 +1,8 @@
 build_snowboy:
 	cd snowboy/swig/Python3 && make; \
 	cp _snowboydetect.so ../../../; \
-	cp snowboy-* ../../../;
+	cp snowboy-* ../../../; \
+	cp snowboydetect.py ../../../;
 
 install: build_snowboy
 	mkdir -p ${PREFIX}/bin;  \
