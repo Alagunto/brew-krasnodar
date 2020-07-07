@@ -23,6 +23,8 @@ class Krasnodar < Formula
     venv.pip_install resource("PyAudio")
   end
 
+  plist_options :startup => true
+
   def plist_name
     "homebrew.krasnodar." + name
   end
