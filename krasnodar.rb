@@ -3,7 +3,7 @@ class Krasnodar < Formula
 
   desc "Putting your mac to sleep when you say Krasnodar"
   homepage "https://github.com/alagunto/homebrew-krasnodar/"
-  url "https://github.com/alagunto/homebrew-krasnodar/archive/krasnodar.tar.gz"
+  url "https://github.com/alagunto/homebrew-krasnodar/archive/baksodar.tar.gz"
   version "1.1.0"
   sha256 ""
   license "MIT"
