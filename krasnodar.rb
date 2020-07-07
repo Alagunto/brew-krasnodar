@@ -21,37 +21,7 @@ class Krasnodar < Formula
     prefix.install Dir["./*"]
     venv = virtualenv_create(libexec, "python3")
     venv.pip_install resource("PyAudio")
-  end
-
-#   plist_options :startup => true
-
-  def plist_name
-    "homebrew.krasnodar." + name
-  end
-
-  def plist; <<~EOS
-   <?xml version="1.0" encoding="UTF-8"?>
-   <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-   <plist version="1.0">
-   <dict>
-     <key>Label</key>
-       <string>#{plist_name}</string>
-     <key>ProgramArguments</key>
-     <array>
-       <string>#{libexec}/bin/python</string>
-       <string>#{prefix}/</string>
-     </array>
-     <key>KeepAlive</key>
-     <true />
-     <key>StandardErrorPath</key>
-     <string>/tmp/krasnodar.error.txt</string>
-     <key>StandardOutPath</key>
-     <string>/tmp/krasnodar.out.txt</string>
-     <key>WorkingDirectory</key>
-     <string>#{prefix}/</string>
-   </dict>
-   </plist>
-   EOS
+    system "make", "install", "PREFIX=#{prefix}"
   end
 
   test do
