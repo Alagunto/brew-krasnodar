@@ -97,7 +97,6 @@ class HotwordDetector(object):
                  apply_frontend=False):
 
         def audio_callback(in_data, frame_count, time_info, status):
-            print("Audio came in ", in_data)
             self.ring_buffer.extend(in_data)
             play_data = chr(0) * len(in_data)
             return play_data, pyaudio.paContinue

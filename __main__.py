@@ -9,6 +9,6 @@ def detected_callback():
 
 detector = snowboydecoder.HotwordDetector("krasnodar.pmdl", sensitivity=0.5, audio_gain=1)
 
-print("Alive somewhat lmao")
+print("Привет, друг. Скажи вслух слово 'Краснодар'.")
 
 detector.start(detected_callback)
