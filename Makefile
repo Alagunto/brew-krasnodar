@@ -6,4 +6,4 @@ build_snowboy:
 
 install: build_snowboy
 	mkdir -p ${PREFIX}/bin;  \
-	printf "#!/bin/bash\n${PREFIX}/libexec/bin/python ${PREFIX}/" > ${PREFIX}/bin/krasnodar; \
+	printf "#!/bin/bash\nPREFIX=${PREFIX} ${PREFIX}/libexec/bin/python ${PREFIX}/" > ${PREFIX}/bin/krasnodar; \
