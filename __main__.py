@@ -4,7 +4,8 @@ import snowboydecoder
 
 def detected_callback():
     print("say going down immediately")
-    os.system("shutdown -s now")
+    os.system("""osascript -e 'display dialog "ПОШЁЛ НАХУЙ СО СВОИМ КРАСНОДАРОМ"' &""")
+    os.system("""sleep 5 && osascript -e 'tell app "System Events" to sleep'""")
 
 
 detector = snowboydecoder.HotwordDetector("krasnodar.pmdl", sensitivity=0.5, audio_gain=1)
