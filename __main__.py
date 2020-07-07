@@ -3,7 +3,6 @@ import snowboydecoder
 
 
 def detected_callback():
-    print("say going down immediately")
     os.system("""osascript -e 'display dialog "ПОШЁЛ НАХУЙ СО СВОИМ КРАСНОДАРОМ"' &""")
     os.system("""sleep 5 && osascript -e 'tell app "System Events" to sleep'""")
 
