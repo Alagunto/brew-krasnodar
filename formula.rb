@@ -20,8 +20,8 @@ class Krasnodar < Formula
   end
 
   def install
-    virtualenv_create(libexec, "python3")
-    virtualenv_install_with_resources
+#     virtualenv_create(libexec, "python3")
+#     virtualenv_install_with_resources
   end
 
   def plist_name
