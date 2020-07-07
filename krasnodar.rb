@@ -18,6 +18,7 @@ class Krasnodar < Formula
   end
 
   def install
+    prefix.install Dir["./*"]
     venv = virtualenv_create(libexec, "python3")
     venv.pip_install resource("PyAudio")
   end
@@ -35,7 +36,7 @@ class Krasnodar < Formula
        <string>#{plist_name}</string>
      <key>ProgramArguments</key>
      <array>
-       <string>#{libexec}/venv/bin/python</string>
+       <string>#{libexec}/bin/python</string>
        <string>#{prefix}/</string>
      </array>
      <key>RunAtLoad</key>
