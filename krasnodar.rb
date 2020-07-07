@@ -1,12 +1,12 @@
 class Krasnodar < Formula
   include Language::Python::Virtualenv
 
-  desc ""
+  desc "Putting your mac to sleep when you say Krasnodar out loud"
   homepage "https://github.com/alagunto/homebrew-krasnodar/"
   url "https://github.com/alagunto/homebrew-krasnodar/archive/master.tar.gz"
-  version ""
+  version "1.0.0"
   sha256 ""
-  license ""
+  license "MIT"
 
   depends_on "make"
   depends_on "python"
